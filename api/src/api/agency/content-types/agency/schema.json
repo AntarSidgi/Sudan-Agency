@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agencies",
+  "info": {
+    "singularName": "agency",
+    "pluralName": "agencies",
+    "displayName": "agency",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "postcode": {
+      "type": "integer"
+    },
+    "pobox": {
+      "type": "integer"
+    },
+    "fax": {
+      "type": "biginteger"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "android": {
+      "type": "string"
+    },
+    "iphone": {
+      "type": "string"
+    },
+    "person": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "role": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    },
+    "officermail": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "agencies"
+    },
+    "officer": {
+      "type": "string"
+    },
+    "officerphone": {
+      "type": "string"
+    }
+  }
+}
